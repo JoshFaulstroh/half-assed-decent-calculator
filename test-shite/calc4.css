@@ -1,3 +1,4 @@
+/*universal configs & variables*/
 :root {
     font-size: 16px;
     font-family: 'Poppins';
@@ -5,44 +6,46 @@
     --text-secondary: ;
     --bg-primary: #b30000;
     --bg-secondary: #b30000;
+    --transition-speed: 600ms;
 }
 
+/*configure the main body of the page*/
 body {
-    color: black;
     background-color: #fffff2;
     margin: 0;
+    margin-bottom: 100px;
     padding: 0;
 }
 
-
+/*scrollbar witdth*/
 body::-webkit-scrollbar {
     width: 0.25rem;
-
 }
 
+/*scrollbar tracking bar*/
 body::-webkit-scrollbar-track {
     background: #797979;
 }
 
+/*scrollbar rectangle thing*/
 body::-webkit-scrollbar-thumb {
-    background: #b30000;
+    background: var(--bg-primary);
 }
 
+/*set margin and padding of main body*/
 main { 
     margin-left: 5rem;
     padding: 1rem;
 }
 
+/*navbar*/
 .navbar{
-    width: 5rem;
-    height: 100vh;
     position: fixed;
     background-color: var(--bg-primary);
     transition: width 200ms ease;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
 }
 
+/*navbar list of items*/
 .nav-list{
     list-style: none;
     padding: 0;
@@ -53,24 +56,37 @@ main {
     height: 100%;
 }
 
+/*icons*/
 .nav-item {
     width: 100%;
 }
 
+/*nav text*/
 .nav-link {
     display: flex;
     align-items: center;
     height: 5rem;
     color: var(--text-primary);
     text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
 }
 
+/*effects when the navbar is hovered over*/
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: #880000;
+    
+}
+
+/*text displayed next to nav items*/
 .link-txt {
     display: none;
     margin-left: 1rem;
     color: #fffff2;
 }
 
+/*icons*/
 .nav-link svg {
     min-width: 2rem;
     max-width: 2rem;
@@ -78,14 +94,50 @@ main {
      
 }
 
-.navbar:hover {
+/*icon colors*/
+.svg-primary {
+    stroke: #fffff2
+}
+
+/*screens < 600px*/
+@media only screen and (max-width: 600px) {
+    .navbar {
+        bottom: 0;
+        width: 100wv;
+        height: 5rem;
+
+    }
+
+    .nav-list {
+        flex-direction: row;
+
+    }
+
+    .nav-link {
+        justify-content: center;
+    }
+
+    main {
+        margin: 0;
+    }
+}
+
+/*screens > 600px*/
+@media only screen and (min-width: 600px) {
+    .navbar{
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+
+    .navbar:hover {
     width: 18rem;
-}
+    }
 
-.navbar:hover .link-txt {
-    display: block;
+    .navbar:hover .link-txt {
+    display: inline;
+    }
 }
-
 
 
 

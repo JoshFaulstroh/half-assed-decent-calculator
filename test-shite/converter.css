@@ -1,0 +1,73 @@
+.converter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.display-1 {
+    height: auto;
+    width: 400px;
+    background: #e4e4d8;
+    border-radius: 20px;
+}
+
+.header {
+    margin-left: 20px;
+}
+
+.display-2 {
+    height: auto;
+    width: 400px;
+    background: #e4e4d8;
+    margin-left: 5rem;
+    border-radius: 20px;
+}
+
+p {
+    margin: 0;
+}
+
+select {
+    border-radius: 20px;
+}
+
+.input-field {
+    background: #c7c7bb;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.input-field p {
+    padding-top: 25px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.input-field select {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.output-field {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background: #c7c7bb;
+    margin-bottom: 15px;
+}
+
+.output-field p {
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+.output-field input {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+main {
+    height: 2000px;
+}
