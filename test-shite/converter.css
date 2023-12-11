@@ -11,6 +11,9 @@
     width: 400px;
     background: #e4e4d8;
     border-radius: 20px;
+    margin-right: 2.5rem;
+    box-shadow: 5px 5px 15px #303030, 
+                -5px -5px 15px #ececdd;
 }
 
 .header {
@@ -21,8 +24,9 @@
     height: auto;
     width: 400px;
     background: #e4e4d8;
-    margin-left: 5rem;
     border-radius: 20px;
+    box-shadow: 5px 5px 15px #303030, 
+                -5px -5px 15px #ececdd;
 }
 
 p {
@@ -31,11 +35,14 @@ p {
 
 select {
     border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .input-field {
     background: #c7c7bb;
     margin-right: 20px;
+    margin-bottom: 20px;
     border-radius: 20px;
 }
 
@@ -45,27 +52,26 @@ select {
     margin-bottom: 15px;
 }
 
-.input-field select {
+.input-field input {
     margin-left: 20px;
     margin-bottom: 20px;
 }
 
 .output-field {
-    margin-left: 20px;
+    background: #c7c7bb;
     margin-right: 20px;
     border-radius: 20px;
-    background: #c7c7bb;
-    margin-bottom: 15px;
 }
 
 .output-field p {
-    padding-top: 10px;
+    padding-top: 25px;
     margin-left: 20px;
+    margin-bottom: 15px;
 }
 
 .output-field input {
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 main {
